@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDPF — Software Development Prompting Framework</title>
+    <meta name="description" content="SDPF is the formal language that eliminates ambiguity between human intent and AI execution. Specification first. Facts before execution. Verification always.">
+    <meta property="og:title" content="SDPF — Software Development Prompting Framework">
+    <meta property="og:description" content="The formal language that eliminates ambiguity between human intent and AI execution.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0ea5e9"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="36" height="36" rx="8" fill="url(#logoGrad)"/>
+                    <path d="M24 10.5H14.5a3.5 3.5 0 0 0 0 7h7a3.5 3.5 0 0 1 0 7H12" stroke="#fff" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+                    <circle cx="12" cy="10.5" r="2" fill="#7dd3fc"/>
+                    <circle cx="24" cy="25" r="2" fill="#7dd3fc"/>
+                </svg>
+                SDPF
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#principles">Core Principles</a></li>
+                <li><a href="#lifecycle">Lifecycle</a></li>
+                <li><a href="#styles">17 Styles</a></li>
+                <li><a href="#versions">Versions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                v1.3.1 · 2026
+            </div>
+            <h1>Software Development<br><span class="accent">Prompting Framework</span></h1>
+            <p class="subtitle">The formal language that eliminates ambiguity between human intent and AI execution</p>
+            <div class="hero-actions">
+                <a href="files/SDPF_Language_Specification_v1_3_1.pdf" class="btn btn-primary" download>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Specification
+                </a>
+                <a href="#principles" class="btn btn-secondary">Explore Framework</a>
+            </div>
+            <div class="problem-callout">
+                <div class="label">The Problem SDPF Solves</div>
+                <p>"When a specification is incomplete, an AI model fills the gaps with its best guess. What the industry calls hallucination is, in the overwhelming majority of cases, specification-induced speculation. The correct intervention is not a better model — it is a complete specification."</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="principles">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Three Core Principles</h2>
+                <p>Every SDPF-governed system is governed by three co-equal, non-negotiable structural requirements — not guidelines.</p>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card p1">
+                    <div class="principle-number">Principle I</div>
+                    <h3>Specification First</h3>
+                    <p>No implementation begins until the contract is complete, locked, and TVG-verified. The specification is the single source of truth.</p>
+                </div>
+                <div class="principle-card p2">
+                    <div class="principle-number">Principle II</div>
+                    <h3>Facts Before Execution</h3>
+                    <p>The Technical Verification Gate (TVG) verifies every technical fact in the specification against live output before any code is generated.</p>
+                </div>
+                <div class="principle-card p3">
+                    <div class="principle-number">Principle III</div>
+                    <h3>Verification Always</h3>
+                    <p>No release is permitted without a complete Verification Closure Record signed by a valid provenance key.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lifecycle" class="lifecycle-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The SDPF Lifecycle</h2>
+                <p>Two phases and seven stages. Phase 0 must be completed before Phase 1 begins.</p>
+            </div>
+            <div class="lifecycle-wrapper">
+                <div class="phase">
+                    <div class="phase-label">Phase 0</div>
+                    <h3>Problem Identification</h3>
+                    <div class="phase-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <strong>Observe</strong>
+                                <span>Measure the current state against the desired state</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <strong>Define</strong>
+                                <span>Write and validate the problem statement</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <strong>Own</strong>
+                                <span>Confirm the problem owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-label">Phase 1</div>
+                    <h3>Specification &amp; Delivery</h3>
+                    <div class="phase-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <strong>Draft</strong>
+                                <span>Write the specification from validated problem statement</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <strong>Lock</strong>
+                                <span>TVG verified, conflicts resolved, REQ-IDs assigned</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3–4</div>
+                            <div class="step-content">
+                                <strong>Test</strong>
+                                <span>Generate and lock tests</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5–6</div>
+                            <div class="step-content">
+                                <strong>Build</strong>
+                                <span>Generate implementation, run verification gate</span>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <strong>Evidence</strong>
+                                <span>Export signed evidence package</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="key-terms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Terms</h2>
+                <p>The essential vocabulary of the SDPF language</p>
+            </div>
+            <dl class="terms-grid">
+                <div class="term-card">
+                    <dt>TVG</dt>
+                    <dd>Technical Verification Gate — verifies every technical fact in the specification against live output before implementation begins.</dd>
+                </div>
+                <div class="term-card">
+                    <dt>Phase 0</dt>
+                    <dd>The mandatory first phase producing a validated problem statement. No Phase 1 begins without it.</dd>
+                </div>
+                <div class="term-card">
+                    <dt>TSP</dt>
+                    <dd>Technical Specification Prompt — the complete SDPF document submitted to an AI model as a locked, verified contract.</dd>
+                </div>
+                <div class="term-card">
+                    <dt>REQ-ID</dt>
+                    <dd>A unique identifier (R-001, R-002, etc.) assigned to every requirement when the specification is locked.</dd>
+                </div>
+                <div class="term-card">
+                    <dt>Bounded Stochasticity</dt>
+                    <dd>The principle that AI outputs are constrained by structural invariants, not surface form.</dd>
+                </div>
+                <div class="term-card">
+                    <dt>[CRITICAL] / [REQUIRED] / [OPTIONAL]</dt>
+                    <dd>Priority tags governing automated conflict resolution and traceability requirements.</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <section id="styles">
+        <div class="container">
+            <div class="section-header">
+                <h2>The 17 SDPF Styles</h2>
+                <p>Formally defined dialects optimised for specific classes of systems</p>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card"><div class="id">Style 1</div><h4>Technical Specification</h4><p>APIs, data pipelines, deterministic systems</p></div>
+                <div class="style-card"><div class="id">Style 2</div><h4>Exploratory Problem-Solving</h4><p>Novel algorithms, research, optimisation</p></div>
+                <div class="style-card"><div class="id">Style 3</div><h4>User Experience-Centered</h4><p>Web and mobile UI, interactive applications</p></div>
+                <div class="style-card"><div class="id">Style 4</div><h4>Creative Scaffolding</h4><p>Games, generative applications, content tools</p></div>
+                <div class="style-card"><div class="id">Style 5</div><h4>Iterative Refinement</h4><p>Agile development, prototypes, evolving requirements</p></div>
+                <div class="style-card"><div class="id">Style 6</div><h4>System Architecture</h4><p>Distributed systems, microservices</p></div>
+                <div class="style-card"><div class="id">Style 7</div><h4>Test-Driven Specification</h4><p>Libraries, shared APIs, critical infrastructure</p></div>
+                <div class="style-card"><div class="id">Style 8</div><h4>Constraint-Based</h4><p>Embedded systems, real-time, performance-critical</p></div>
+                <div class="style-card"><div class="id">Style 9</div><h4>Maintenance / Refactor</h4><p>Legacy code modernisation, technical debt</p></div>
+                <div class="style-card"><div class="id">Style 10</div><h4>Compliance-Driven</h4><p>HIPAA, SOX, PCI-DSS, security-critical</p></div>
+                <div class="style-card"><div class="id">Style 11</div><h4>Meta-Hypercomputer</h4><p>Universal recursive computation engines</p></div>
+                <div class="style-card"><div class="id">Style 12</div><h4>Sovereign Structural Ledger</h4><p>Immutable audit ledgers, chain-of-custody</p></div>
+                <div class="style-card"><div class="id">Style 13</div><h4>Hybrid System Composition</h4><p>Multi-module, multi-team architectures</p></div>
+                <div class="style-card"><div class="id">Style 14</div><h4>Dynamic Criticality</h4><p>Safety-critical systems with runtime escalation</p></div>
+                <div class="style-card"><div class="id">Style 15</div><h4>Cross-System Verification</h4><p>Formal verification, proof-generating pipelines</p></div>
+                <div class="style-card"><div class="id">Style 16</div><h4>Prompt-Driven Documentation</h4><p>Auto-generated documentation, self-documenting code</p></div>
+                <div class="style-card"><div class="id">Style 17</div><h4>Domain-Specific Template</h4><p>Clinical, legal, financial, infrastructure</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="versions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Version History</h2>
+                <p>The evolution of the SDPF Language Specification</p>
+            </div>
+            <div class="version-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>Date</th>
+                            <th>Key Changes</th>
+                            <th>Classification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="version">1.0</td>
+                            <td>Jan 2026</td>
+                            <td>First draft — initial formal specification</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="version">1.1</td>
+                            <td>Feb 2026</td>
+                            <td>TVG elevated to Core Principle II. Automated Conflict Resolution Protocol added.</td>
+                            <td><span class="tag tag-breaking">BREAKING</span></td>
+                        </tr>
+                        <tr>
+                            <td class="version">1.2</td>
+                            <td>Mar 2026</td>
+                            <td>Phase 0 added as mandatory lifecycle gate.</td>
+                            <td><span class="tag tag-breaking">BREAKING</span></td>
+                        </tr>
+                        <tr>
+                            <td class="version">1.3</td>
+                            <td>Mar 2026</td>
+                            <td>Unified edition — all normative content consolidated.</td>
+                            <td><span class="tag tag-minor">MINOR</span></td>
+                        </tr>
+                        <tr>
+                            <td class="version">1.3.1</td>
+                            <td>Apr 2026</td>
+                            <td>Key Terms Quick Reference added. Human Escalation Justification added.</td>
+                            <td><span class="tag tag-minor">MINOR</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="cite">
+        <div class="container">
+            <div class="section-header">
+                <h2>How to Cite</h2>
+                <p>For academic and professional citation</p>
+            </div>
+            <div class="citation">
+                Abdullah, H. (2026). <em>SDPF Language Specification, Version 1.3.1.</em> Software Development Prompting Framework.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">&copy; 2026 Hamza Abdullah. All rights reserved.</div>
+            <div class="tagline">Problem first. Specification second. Facts before execution. Verification always.</div>
+        </div>
+    </footer>
+</body>
+</html>

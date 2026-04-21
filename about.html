@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — SDPF</title>
+    <meta name="description" content="The origin, philosophy, and intellectual property of the Software Development Prompting Framework.">
+    <meta property="og:title" content="About — SDPF">
+    <meta property="og:description" content="The formal language for eliminating ambiguity between human intent and AI execution.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0ea5e9"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="36" height="36" rx="8" fill="url(#logoGrad)"/>
+                    <path d="M24 10.5H14.5a3.5 3.5 0 0 0 0 7h7a3.5 3.5 0 0 1 0 7H12" stroke="#fff" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+                    <circle cx="12" cy="10.5" r="2" fill="#7dd3fc"/>
+                    <circle cx="24" cy="25" r="2" fill="#7dd3fc"/>
+                </svg>
+                SDPF
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle navigation">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Core Principles</a></li>
+                <li><a href="index.html#lifecycle">Lifecycle</a></li>
+                <li><a href="index.html#styles">17 Styles</a></li>
+                <li><a href="index.html#versions">Versions</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>About SDPF</h1>
+            <p>The formal language for eliminating ambiguity between human intent and AI execution</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content-card">
+                <h2>The Origin Story</h2>
+                <p>SDPF was created in 2025 in response to a problem the AI industry has systematically misidentified.</p>
+                
+                <div class="quote">
+                    "The problem is not the AI model. The problem is the specification. When a specification is incomplete or contains unverified technical facts, an AI model fills the gaps with its best guess. What the industry calls hallucination is, in the overwhelming majority of practical cases, specification-induced speculation."
+                    <cite>— Hamza Abdullah, Creator and Principal Author</cite>
+                </div>
+
+                <p>The insight was simple but profound: better models make better guesses, but they are still guessing. The correct intervention is not a better model. It is a complete specification — one where there is nothing to guess.</p>
+
+                <p>SDPF is the formal language that makes complete specifications possible. It defines the vocabulary, grammar, semantics, and enforcement mechanisms that eliminate ambiguity at the source.</p>
+            </div>
+
+            <div class="content-card">
+                <h2>By the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Core Principles</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">17</div>
+                        <div class="stat-label">Specialised Styles</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Normative Rules</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>What SDPF Provides</h2>
+                <ul class="feature-list">
+                    <li><strong>Complete Specifications</strong> — Every section defined, every requirement tagged, every exception named</li>
+                    <li><strong>TVG Verification</strong> — Every technical fact verified against live output before code is generated</li>
+                    <li><strong>Phase 0 Problem Identification</strong> — Mandatory problem definition prevents solving the wrong problem</li>
+                    <li><strong>Automated Conflict Resolution</strong> — [CRITICAL] &gt; [REQUIRED] &gt; [OPTIONAL] priority system</li>
+                    <li><strong>Evidence &amp; Provenance</strong> — Tamper-evident, auditable proof of conformance</li>
+                    <li><strong>Bounded Stochasticity</strong> — Structural invariants guarantee reliability regardless of AI variation</li>
+                </ul>
+            </div>
+
+            <div class="content-card">
+                <h2>Intellectual Property</h2>
+                <p>The name "SDPF", "Software Development Prompting Framework", and the associated vocabulary, style system, and methodology defined in this specification are the intellectual property of Hamza Abdullah.</p>
+                <p>Permission is granted to read, reproduce, and cite this specification for the purposes of implementing conforming tools, conducting research, and evaluation, provided that attribution to the author is maintained and no modifications to the normative text are presented as the original specification.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">&copy; 2026 Hamza Abdullah. All rights reserved.</div>
+            <div class="tagline">Problem first. Specification second. Facts before execution. Verification always.</div>
+        </div>
+    </footer>
+</body>
+</html>
