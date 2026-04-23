@@ -8,10 +8,13 @@
     <meta property="og:title" content="SDPF — Software Development Prompting Framework">
     <meta property="og:description" content="The formal language that eliminates ambiguity between human intent and AI execution.">
     <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#principles" class="skip-link">Skip to content</a>
     <nav>
         <div class="container">
             <a href="index.html" class="logo">
@@ -230,7 +233,7 @@
                 <div class="style-card"><div class="id">Style 8</div><h4>Constraint-Based</h4><p>Embedded systems, real-time, performance-critical</p></div>
                 <div class="style-card"><div class="id">Style 9</div><h4>Maintenance / Refactor</h4><p>Legacy code modernisation, technical debt</p></div>
                 <div class="style-card"><div class="id">Style 10</div><h4>Compliance-Driven</h4><p>HIPAA, SOX, PCI-DSS, security-critical</p></div>
-                <div class="style-card"><div class="id">Style 11</div><h4>Meta-Hypercomputer</h4><p>Universal recursive computation engines</p></div>
+                <div class="style-card"><div class="id">Style 11</div><h4>Data Pipeline</h4><p>ETL, streaming, data transformation</p></div>
                 <div class="style-card"><div class="id">Style 12</div><h4>Sovereign Structural Ledger</h4><p>Immutable audit ledgers, chain-of-custody</p></div>
                 <div class="style-card"><div class="id">Style 13</div><h4>Hybrid System Composition</h4><p>Multi-module, multi-team architectures</p></div>
                 <div class="style-card"><div class="id">Style 14</div><h4>Dynamic Criticality</h4><p>Safety-critical systems with runtime escalation</p></div>
@@ -308,9 +311,10 @@
 
     <footer>
         <div class="container">
-            <div class="copyright">&copy; 2026 Hamza Abdullah. All rights reserved.</div>
+            <div class="copyright">&copy; <span id="year"></span> Hamza Abdullah. All rights reserved.</div>
             <div class="tagline">Problem first. Specification second. Facts before execution. Verification always.</div>
         </div>
     </footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
