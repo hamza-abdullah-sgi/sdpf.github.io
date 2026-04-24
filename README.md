@@ -1,4 +1,3 @@
-# sdpf.github.io
 # SDPF — Software Development Prompting Framework
 
 **Version 1.3.1 · Hamza Abdullah · 2026**
